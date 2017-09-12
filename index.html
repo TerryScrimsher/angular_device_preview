@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>3 Col Portfolio - Start Bootstrap Template</title>
+    <title>Preview Page</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -18,30 +18,30 @@
 
   </head>
 
-  <body>
+  <body ng-app="myApp">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <a class="navbar-brand" href="#">Logical Position</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link" href="#">All
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">Desktop</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#">Tablet</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#">Mobile</a>
             </li>
           </ul>
         </div>
@@ -49,45 +49,46 @@
     </nav>
 
     <!-- Page Content -->
-      <div class="previews">
+    <div ng-controller="RoutingController" class="previews">
 
-        <!-- Page Heading -->
-        <h1 class="my-4">Page Heading
-          <small>Secondary Text</small>
+      <!-- Page Heading -->
+      <!-- <div class="container">
+        <h1 class="my-4">Preview Demo
+          <small>Work in Progress</small>
         </h1>
+      </div> -->
+      <!-- /.container -->
 
-        <div class="row">
-          <div class="desktop">
-            <div class="iframe-container">
-              <iframe src="https://www.logicalposition.com" frameborder="0"></iframe>
-            </div>
-          </div>
-          <div class="tablet">
-            <div class="iframe-container">
-              <iframe src="https://www.logicalposition.com" frameborder="0"></iframe>
-            </div>
-          </div>
-          <div class="mobile">
-            <div class="iframe-container style-3">
-              <iframe src="https://www.logicalposition.com" frameborder="0"></iframe>
-            </div>
+      <div class="row">
+        <div class="desktop">
+          <div class="iframe-container">
+            <iframe  src="{{url}}" frameborder="0"></iframe>
           </div>
         </div>
-        <!-- /.row -->
+        <div class="tablet">
+          <div class="iframe-container">
+            <iframe src="{{url}}" frameborder="0"></iframe>
+          </div>
+        </div>
+        <div class="mobile">
+          <div class="iframe-container style-3">
+            <iframe src="{{url}}" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
 
-    <div class="scrollbar style-3">
     </div>
+    <!-- /.previews -->
 
-    <div class="previews">
-
-    <!-- /.container -->
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="vendor/angular/angular-route.min.js"></script>
+    <script src="js/route.js"></script>
   </body>
 
 </html>

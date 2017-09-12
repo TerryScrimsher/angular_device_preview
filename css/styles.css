@@ -82,3 +82,17 @@ iframe {
   margin: -2px -5px;
   transform: scale(.54) translate(-32.6%,-26%);
 }
+
+
+@media screen and (max-width: 500px) {
+  .desktop {
+    position: static;
+    margin: auto;
+  }
+  .tablet {
+    bottom: 13.1%;
+  }
+  .mobile {
+    bottom: 13.1%;
+  }
+}

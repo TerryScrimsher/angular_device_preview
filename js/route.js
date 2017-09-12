@@ -5,25 +5,24 @@ var module = angular.module("myApp", ['ngRoute']);
 
 module.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
-        .when('/route1/:param1/:param2', {
-            templateUrl: 'route1.html',
-            controller: 'RoutingController'
-        })
-        .when('/route2/:param1/:param2', {
-            templateUrl: 'route2.html',
+        .when(':param1', {
+            templateUrl: 'devices.html',
             controller: 'RoutingController'
         })
         .otherwise({
-            redirectTo: '/route1/default-book/default-page'
+          templateUrl: 'devices.html',
+          controller: 'RoutingController'
         });
 }]);
-module.controller("RoutingController", function ($scope, $routeParams, $location) {
-    // Using $location service
-    var url = $location.path().split('/');
-    $scope.firstParameter = url[2];
-    $scope.secondParameter = url[3];
 
-    // Using $routeParams
-    $scope.param1 = $routeParams.param1;
-    $scope.param2 = $routeParams.param2;
-});
+module.controller("RoutingController", ['$scope', '$sce', '$location', function ($scope, $sce, $location) {
+
+  var url = $location.path().split('/');
+  if (url[1]) {
+    $scope.firstParameter = "https://www." + url[1];
+  } else {
+    $scope.firstParameter = "https://www." + "logicalposition.com";
+  }
+  
+  $scope.url = $sce.trustAsResourceUrl($scope.firstParameter);
+}]);
