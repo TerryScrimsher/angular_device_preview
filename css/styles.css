@@ -23,7 +23,6 @@ iframe {
   float: left;
   width: 100%;
 }
-
 .desktop {
   width: 1119px;
   height: 663px;
@@ -57,7 +56,6 @@ iframe {
   transform-origin: bottom left;
   background-image: url(../assets/phone_mockup.png);
 }
-
 .desktop .iframe-container {
   width: 1219px;
   height: 786px;
@@ -83,16 +81,86 @@ iframe {
   transform: scale(.54) translate(-32.6%,-26%);
 }
 
-
-@media screen and (max-width: 500px) {
-  .desktop {
-    position: static;
-    margin: auto;
-  }
+@media screen and (max-width: 1500px) {
   .tablet {
-    bottom: 13.1%;
+    left: 60%;
   }
   .mobile {
-    bottom: 13.1%;
+    left: 80%;
   }
+}
+
+
+@media screen and (max-width: 1160px) {
+  .desktop {
+    background-size: contain;
+    width: 800px;
+  }
+  .tablet {
+    background-size: contain;
+    bottom: 16.5%;
+    width: 300px;
+    left: 60%;
+  }
+  .mobile {
+    background-size: contain;
+    bottom: 21.2%;
+    width: 180px;
+    left: 77%;
+  }
+  .desktop .iframe-container {
+    width: 869px;
+    height: 561px;
+    margin: -19px 0 0 -9px;
+  }
+  .tablet .iframe-container {
+    width: 770px;
+    height: 1083px;
+    margin: -33px 0 0 -5px;
+  }
+  .mobile .iframe-container {
+    width: 285px;
+    height: 531px;
+    margin: -2px -2px;
+  }
+  .row{
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .desktop {
+    background-size: contain;
+    width: 500px;
+  }
+  .tablet {
+    background-size: contain;
+    bottom: 16.7%;
+    width: 180px;
+    left: 60%;
+  }
+  .mobile {
+    background-size: contain;
+    bottom: 24.7%;
+    width: 110px;
+    left: 77%;
+  }
+  .desktop .iframe-container {
+    width: 544px;
+    height: 350px;
+    margin: -11px 0 0 -5px;
+  }
+  .tablet .iframe-container {
+    width: 459px;
+    height: 635px;
+    margin: -15px 0 0 -2px;
+  }
+  .mobile .iframe-container {
+    width: 174px;
+    height: 323px;
+    margin: -2px 0px;
+  }
+
+
 }
