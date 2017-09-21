@@ -28,7 +28,7 @@ iframe {
   height: 663px;
   position: absolute;
   left: 3%;
-  bottom: 7%;
+  top: 100px;
   background-repeat: no-repeat;
   overflow: hidden;
   transform-origin: bottom left;
@@ -39,7 +39,7 @@ iframe {
   height: 546px;
   position: absolute;
   left: 63%;
-  bottom: 7%;
+  top: 217px;
   background-repeat: no-repeat;
   overflow: hidden;
   transform-origin: bottom left;
@@ -50,7 +50,7 @@ iframe {
   height: 451px;
   position: absolute;
   left: 85%;
-  bottom: 7%;
+  top: 312px;
   background-repeat: no-repeat;
   overflow: hidden;
   transform-origin: bottom left;
@@ -95,18 +95,26 @@ iframe {
   .desktop {
     background-size: contain;
     width: 800px;
+    height: 474px;
+    top: 178px;
+    bottom: 0px;
   }
   .tablet {
     background-size: contain;
-    bottom: 16.5%;
+    bottom: 0px;
     width: 300px;
     left: 60%;
+    height: 435px;
+    top: 217px;
   }
   .mobile {
     background-size: contain;
     bottom: 21.2%;
     width: 180px;
     left: 77%;
+    height: 380px;
+    bottom: 0px;
+    top: 272px;
   }
   .desktop .iframe-container {
     width: 869px;
@@ -144,7 +152,7 @@ iframe {
     background-size: contain;
     bottom: 24.7%;
     width: 110px;
-    left: 77%;
+    left: 78%;
   }
   .desktop .iframe-container {
     width: 544px;
@@ -163,4 +171,90 @@ iframe {
   }
 
 
+}
+
+@media screen and (max-width: 600px) {
+  .desktop {
+    background-size: contain;
+    width: 270px;
+    position: static;
+    margin: 40px auto;
+    height: 155px;
+  }
+  .tablet {
+    background-size: contain;
+    bottom: 20.7%;
+    width: 150px;
+    position: static;
+    margin: 0px auto;
+    height: 218px;
+  }
+  .mobile {
+    background-size: contain;
+    bottom: 28.7%;
+    width: 90px;
+    position: static;
+    margin: 0px auto;
+    height: 189px;
+  }
+  .desktop .iframe-container {
+    width: 145%;
+    height: 162%;
+    margin: -40px 0 0px -57px;
+    transform: scale(.5) translate(-4.3%,-9.7%);
+  }
+  .tablet .iframe-container {
+    width: 255%;
+    height: 247%;
+    margin: -15px 0 0 -2px;
+  }
+  .mobile .iframe-container {
+    width: 280%;
+    height: 249%;
+    margin: -105px -57px;
+    transform: scale(.3) translate(-32.6%,-26%);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .desktop {
+    background-size: contain;
+    width: 270px;
+    position: static;
+    margin: 40px auto;
+    height: 155px;
+  }
+  .tablet {
+    background-size: contain;
+    bottom: 20.7%;
+    width: 150px;
+    position: static;
+    margin: 0px auto;
+    height: 218px;
+  }
+  .mobile {
+    background-size: contain;
+    bottom: 28.7%;
+    width: 90px;
+    position: static;
+    margin: 0px auto;
+    height: 189px;
+  }
+  .desktop .iframe-container {
+    width: 145%;
+    height: 162%;
+    margin: -40px 0 0px -57px;
+    transform: scale(.5) translate(-4.3%,-9.7%);
+  }
+  .tablet .iframe-container {
+    width: 255%;
+    height: 247%;
+    margin: -15px 0 0 -2px;
+  }
+  .mobile .iframe-container {
+    width: 280%;
+    height: 249%;
+    margin: -105px -57px;
+    transform: scale(.3) translate(-32.6%,-26%);
+  }
 }
