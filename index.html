@@ -8,11 +8,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Preview Page</title>
+    <title>All Devices Preview Page | Logical Position</title>
+
+    <link rel="shortcut icon" href="https://www.logicalposition.com/preview/favicon.ico">
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
@@ -20,30 +22,30 @@
 
   </head>
 
-  <body ng-app="myApp">
+  <body ng-app="myApp" ng-controller="RoutingController">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="assets/logo-white.png"></a>
+        <a class="navbar-brand" href="https://www.logicalposition.com"><img src="assets/logo-white.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html"><i class="fa fa-desktop" aria-hidden="true"></i> <i class="fa fa-tablet" aria-hidden="true"></i> <i class="fa fa-mobile" aria-hidden="true"></i> All Devices
+              <a class="nav-link" href="index.html{{routeURL}}"><i class="fa fa-desktop" aria-hidden="true"></i> <i class="fa fa-tablet" aria-hidden="true"></i> <i class="fa fa-mobile" aria-hidden="true"></i> All Devices
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="desktop.html"><i class="fa fa-desktop" aria-hidden="true"></i> Desktop</a>
+              <a class="nav-link" href="desktop.html{{routeURL}}"><i class="fa fa-desktop" aria-hidden="true"></i> Desktop</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tablet.html"><i class="fa fa-tablet" aria-hidden="true"></i> Tablet</a>
+              <a class="nav-link" href="tablet.html{{routeURL}}"><i class="fa fa-tablet" aria-hidden="true"></i> Tablet</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="mobile.html"><i class="fa fa-mobile" aria-hidden="true"></i> Mobile</a>
+              <a class="nav-link" href="mobile.html{{routeURL}}"><i class="fa fa-mobile" aria-hidden="true"></i> Mobile</a>
             </li>
           </ul>
         </div>
@@ -51,7 +53,7 @@
     </nav>
 
     <!-- Page Content -->
-    <div ng-controller="RoutingController" class="previews">
+    <div class="previews">
 
       <!-- Page Heading -->
       <!-- <div class="container">
@@ -85,10 +87,10 @@
 
     <div class="footer-copyright">
 			<div class="row text-center">
-				<p>© 2017 <a href="">Logical Position<sup>®</sup></a>. All Rights Reserved.</p>
+				<p>© 2017 <a href="https://www.logicalposition.com">Logical Position<sup>®</sup></a>. All Rights Reserved.</p>
 			</div>
 			<div class="row text-center">
-				<p><a href="privacy-policy">Privacy Policy</a> | <a href="terms-of-use">Terms of Use</a> | <a href="terms-of-service">Terms of Service</a> | <a href="google-third-party">Google Policies</a> | <a href="sitemap">Sitemap</a> | <a href="faq.php">FAQ</a></p>
+				<p><a href="https://www.logicalposition.com/privacy-policy">Privacy Policy</a> | <a href="https://www.logicalposition.com/terms-of-use">Terms of Use</a> | <a href="https://www.logicalposition.com/terms-of-service">Terms of Service</a> | <a href="https://www.logicalposition.com/google-third-party">Google Policies</a> | <a href="https://www.logicalposition.com/sitemap">Sitemap</a> | <a href="https://www.logicalposition.com/faq">FAQ</a></p>
 			</div>
 		</div>
 

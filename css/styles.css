@@ -7,6 +7,7 @@
 body {
     padding-top: 54px;
     line-height: 1;
+    font-family: 'Open Sans', sans-serif;
 }
 
 @media (min-width: 992px) {
@@ -428,18 +429,19 @@ p {
   }
   .single-tablet {
     background-size: contain;
-    width: 150px;
     position: static;
-    margin: 80px auto 60px;
-    height: 218px;
+    margin: 100px auto 120px;
+    height: 518px;
+    width: 300px;
+    height: 435px;
   }
-  .single-mobile {
+  /*.single-mobile {
     background-size: contain;
     width: 90px;
     position: static;
     margin: 80px auto 60px;
     height: 189px;
-  }
+  }*/
   .desktop {
     background-size: contain;
     width: 270px;
@@ -468,16 +470,16 @@ p {
     transform: scale(.3) translate(-4.3%,-9.7%);
   }
   .single-tablet .iframe-container {
-    width: 255%;
-    height: 247%;
-    margin: -15px 0 0 -2px;
+    width: 770px;
+    height: 1083px;
+    margin: -33px 0 0 -5px;
   }
-  .single-mobile .iframe-container {
+  /*.single-mobile .iframe-container {
     width: 280%;
     height: 249%;
     margin: -105px -57px;
     transform: scale(.3) translate(-32.6%,-26%);
-  }
+  }*/
   .desktop .iframe-container {
     width: 249%;
     height: 276%;
