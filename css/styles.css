@@ -82,6 +82,7 @@ p {
   overflow: hidden;
   transform-origin: bottom left;
   background-image: url(../assets/laptop_mockup.png);
+  margin-top: auto;
 }
 .tablet {
   width: 377px;
@@ -93,6 +94,7 @@ p {
   overflow: hidden;
   transform-origin: bottom left;
   background-image: url(../assets/tablet_mockup.png);
+  margin-top: auto;
 }
 .mobile {
   width: 214px;
@@ -104,6 +106,7 @@ p {
   overflow: hidden;
   transform-origin: bottom left;
   background-image: url(../assets/phone_mockup.png);
+  margin-top: auto;
 }
 .single-desktop .iframe-container {
   width: 1219px;
@@ -154,6 +157,79 @@ p {
   transform: scale(.54) translate(-32.6%,-26%);
 }
 
+/*.container {
+    max-width: 1760px;
+}*/
+
+.navbar-brand {
+    margin-left: 2%;
+}
+.navbar-expand-lg .navbar-collapse {
+    margin-right: 2%;
+}
+
+@media (min-width: 1200px) {
+  .container {
+      max-width: none;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+      max-width: none;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+      max-width: none;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+       max-width: none;
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  .row {
+     width: 80%;
+  }
+  .navbar-brand {
+      margin-left: 4%;
+  }
+  .navbar-expand-lg .navbar-collapse {
+      margin-right: 4%;
+  }
+
+}
+
+@media screen and (min-width: 1800px) {
+  /*.container {
+    max-width: 88%;
+  }*/
+  .row {
+    -ms-flex-wrap: wrap;
+    flex-wrap: inline;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    width: 100%;
+    margin: 44px auto;
+  }
+  .desktop {
+    position: initial;
+    left: auto;
+  }
+  .tablet {
+    position: initial;
+    left: auto;
+  }
+  .mobile {
+    position: initial;
+    left: auto;
+  }
+}
+
 @media screen and (max-width: 1500px) {
   .tablet {
     left: 60%;
@@ -162,7 +238,6 @@ p {
     left: 80%;
   }
 }
-
 
 @media screen and (max-width: 1160px) {
   .single-desktop {
@@ -198,6 +273,7 @@ p {
     height: 474px;
     top: 178px;
     bottom: 0px;
+    margin-top: inherit;
   }
   .tablet {
     background-size: contain;
@@ -206,6 +282,7 @@ p {
     left: 60%;
     height: 435px;
     top: 217px;
+    margin-top: inherit;
   }
   .mobile {
     background-size: contain;
@@ -215,6 +292,7 @@ p {
     height: 380px;
     bottom: 0px;
     top: 272px;
+    margin-top: inherit;
   }
   .single-desktop .iframe-container {
     width: 869px;
@@ -314,9 +392,10 @@ p {
     margin: -2px 0px;
   }*/
   .desktop .iframe-container {
-    width: 544px;
-    height: 350px;
-    margin: -11px 0 0 -5px;
+    width: 950px;
+    height: 611px;
+    margin: -141px 0 0 -209px;
+    transform: scale(.4) translate(-4.3%,-9.7%);
   }
   .tablet .iframe-container {
     width: 459px;
@@ -324,9 +403,10 @@ p {
     margin: -15px 0 0 -2px;
   }
   .mobile .iframe-container {
-    width: 174px;
-    height: 323px;
-    margin: -2px 0px;
+    width: 427%;
+    height: 378%;
+    margin: -279px -149px;
+    transform: scale(.2) translate(-32.6%,-26%);
   }
   .footer-copyright {
     margin-top: 500px;
@@ -394,10 +474,10 @@ p {
     transform: scale(.3) translate(-32.6%,-26%);
   }*/
   .desktop .iframe-container {
-    width: 151%;
-    height: 162%;
-    margin: -57px 0 0px -85px;
-    transform: scale(.5) translate(-4.3%,-9.7%);
+    width: 252%;
+    height: 275%;
+    margin: -185px 0 0px -278px;
+    transform: scale(.3) translate(-4.3%,-9.7%);
   }
   .tablet .iframe-container {
     width: 255%;
@@ -405,10 +485,10 @@ p {
     margin: -15px 0 0 -2px;
   }
   .mobile .iframe-container {
-    width: 280%;
-    height: 249%;
-    margin: -105px -57px;
-    transform: scale(.3) translate(-32.6%,-26%);
+    width: 412%;
+    height: 377%;
+    margin: -225px -117px;
+    transform: scale(.2) translate(-32.6%,-26%);
   }
   .footer-copyright {
     margin-top: 300px;
@@ -481,10 +561,10 @@ p {
     transform: scale(.3) translate(-32.6%,-26%);
   }*/
   .desktop .iframe-container {
-    width: 249%;
-    height: 276%;
-    margin: -132px 0 0px -193px;
-    transform: scale(.3) translate(-4.3%,-9.7%);
+    width: 375%;
+    height: 403%;
+    margin: -232px 0 0px -364px;
+    transform: scale(.2) translate(-4.3%,-9.7%);
   }
   .tablet .iframe-container {
     width: 255%;
@@ -492,10 +572,10 @@ p {
     margin: -15px 0 0 -2px;
   }
   .mobile .iframe-container {
-    width: 280%;
-    height: 249%;
-    margin: -105px -57px;
-    transform: scale(.3) translate(-32.6%,-26%);
+    width: 412%;
+    height: 377%;
+    margin: -225px -117px;
+    transform: scale(.2) translate(-32.6%,-26%);
   }
   .footer-copyright {
     font-size: 14px;
